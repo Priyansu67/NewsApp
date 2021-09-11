@@ -1,0 +1,49 @@
+name: headliners
+description: A News app build using flutter.
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  http: ^0.13.3
+  url_launcher: ^6.0.9
+  desktop_window: ^0.4.0
+  flutter_lints: 
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: "^0.9.1"
+  msix: ^2.1.3
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon.png"
+
+flutter:
+  uses-material-design: true
+
+msix_config:
+  display_name: Headliners
+  publisher_display_name: Priyansu Choudhury
+  identity_name: www.priyansu.in
+  msix_version: 1.0.0.0
+  #Get-PfxCertificate in PowerShell
+  publisher: E=priyansuc67@gmail.com, CN=www.priyansu.in, OU=Personal, O=Priyansu Choudhury, L=Jeypore, S=Odisha, C=IN
+  certificate_path: C:\Users\priya\Desktop\CERTIFICATE.pfx
+  certificate_password: 25316798dedsec#
+  logo_path: C:\Users\priya\Desktop\Project Files\Flutter\Flutter News\newsy_flutter\assets\icon.png
+  start_menu_icon_path: C:\Users\priya\Desktop\Project Files\Flutter\Flutter News\newsy_flutter\assets\icon.png
+  tile_icon_path: C:\Users\priya\Desktop\Project Files\Flutter\Flutter News\newsy_flutter\assets\icon.png
+  icons_background_color: transparent
+  architecture: x64
+  capabilities: 'internetClient'
+  store: false
